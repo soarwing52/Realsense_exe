@@ -38,10 +38,7 @@ then the create list will read the jpg files and match a list with the coordinat
 
 with geotag it will read the match list and write the coordinates to the photos.
 
-
-----------------------------------------------------
 Creator:
 Jay(Che-Yi), Hung
 Creation Date: 2019/10/08
 Camera: Intel Realsense D435
-----------------------------------------------------
