@@ -1,29 +1,48 @@
-## auto-plate-block
-automatic block out the driving plates in the picture
+## Main usage
+double click to open the measure exe
 
-this project combines two library I found
+Esc/Q :leave
+space: switch between modes
 
-ImageAI for object detection from OlafenwaMoses
-https://github.com/OlafenwaMoses/ImageAI
+Video mode:
+any other key can go to the next picture
 
-and openalpr for plate recognition
+Measure mode:
+right key to go to the next picture, left will go the the previous picture.
 
-## Objective
-to censor people and car plates for privacy issues
+note:go back will take longer to find frames.
 
-#The final result
-The openalpr is eventually not used for the limitations of recognition
+left click, hold to measure, right click to erase
 
-and also this script didn't need to read the plates, just need to make it unreadable.
+----------------------------------------------------
+Creator:
+Jay(Che-Yi), Hung
+Creation Date: 2019/10/08
+Camera: Intel Realsense D435
+----------------------------------------------------
 
-So the final method is to pick out the location of Person, Car, Truck and apply GaussianBlur 
+## Data source
+## Data Capture:
+with Intel D435 & GPS reviever
 
-with closer/bigger objects I apply level 7 and further/smaller 11
+it will take picture every 25 meters while driving
 
-## Usage
-simply select the directory containing the images, and it will create a _foldername_blocked next to it
+Space: take on photo manually
 
-The Label will show the file currently working and the textbox will show error files, which could be brocken image
+P: pause auto mode, manual picture still available
 
-![images/0717_005-1172.jpg](https://github.com/soarwing52/Blur_for_Privacy/blob/master/image/0717_005-1172.jpg)
-![image2](https://github.com/soarwing52/Blur_for_Privacy/blob/master/image/0717_005-1217.jpg)
+R: start a new record
+
+Esc/Q: shutdown
+
+it will create 2 csv files, one for current location and one will show all the locations
+
+## Data process:
+select the folder with the recorded data(the one contains bag & foto_log)
+
+start with create jpg, it will generate the pictures from the bag file
+
+then the create list will read the jpg files and match a list with the coordinates of the time recorded
+
+with geotag it will read the match list and write the coordinates to the photos.
+
