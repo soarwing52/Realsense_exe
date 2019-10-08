@@ -1,0 +1,25 @@
+Data Capture:
+with Intel D435 & GPS reviever
+
+it will take picture every 25 meters while driving
+
+Space: take on photo manually
+
+P: pause auto mode, manual picture still available
+
+R: start a new record
+
+Esc/Q: shutdown
+
+it will create 2 csv files, one for current location and one will show all the locations
+
+Data process:
+select the folder with the recorded data(the one contains bag & foto_log)
+
+start with create jpg, it will generate the pictures from the bag file
+
+then the create list will read the jpg files and match a list with the coordinates of the time recorded
+
+with geotag it will read the match list and write the coordinates to the photos.
+
+

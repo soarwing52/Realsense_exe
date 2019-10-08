@@ -1,0 +1,19 @@
+Esc/Q :leave
+space: switch between modes
+
+Video mode:
+any other key can go to the next picture
+
+Measure mode:
+right key to go to the next picture, left will go the the previous picture.
+
+note:go back will take longer to find frames.
+
+left click, hold to measure, right click to erase
+
+----------------------------------------------------
+Creator:
+Jay(Che-Yi), Hung
+Creation Date: 2019/10/08
+Camera: Intel Realsense D435
+----------------------------------------------------
