@@ -14,14 +14,6 @@ note:go back will take longer to find frames.
 
 left click, hold to measure, right click to erase
 
-----------------------------------------------------
-Creator:
-Jay(Che-Yi), Hung
-Creation Date: 2019/10/08
-Camera: Intel Realsense D435
-----------------------------------------------------
-
-## Data source
 ## Data Capture:
 with Intel D435 & GPS reviever
 
@@ -46,3 +38,10 @@ then the create list will read the jpg files and match a list with the coordinat
 
 with geotag it will read the match list and write the coordinates to the photos.
 
+
+----------------------------------------------------
+Creator:
+Jay(Che-Yi), Hung
+Creation Date: 2019/10/08
+Camera: Intel Realsense D435
+----------------------------------------------------
