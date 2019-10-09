@@ -2,17 +2,18 @@
 double click to open the measure exe
 
 Esc/Q :leave
-space: switch between modes
+
+Space: switch between modes
 
 Video mode:
 any other key can go to the next picture
+![video](https://github.com/soarwing52/Realsense_exe/blob/master/img/video%20mode.JPG)
 
 Measure mode:
 right key to go to the next picture, left will go the the previous picture.
-
-note:go back will take longer to find frames.
-
 left click, hold to measure, right click to erase
+note:go back will take longer to find frames.
+![measure](https://github.com/soarwing52/Realsense_exe/blob/master/img/measure%20mode.JPG)
 
 ## Data Capture:
 with Intel D435 & GPS reviever
@@ -37,6 +38,12 @@ start with create jpg, it will generate the pictures from the bag file
 then the create list will read the jpg files and match a list with the coordinates of the time recorded
 
 with geotag it will read the match list and write the coordinates to the photos.
+
+
+technical:
+It will base on the matcher.txt and find the corresponding frame number, to get the correct measure, therefore it takes longer
+
+![command](https://github.com/soarwing52/Realsense_exe/blob/master/img/technical.JPG)
 
 Creator:
 
